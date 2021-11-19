@@ -1,5 +1,7 @@
 DOCKER_NAME=dosbox-tasm
 
+all: build run
+
 build:
 	docker build $(docker_ARGS) -t $(DOCKER_NAME) .
 
